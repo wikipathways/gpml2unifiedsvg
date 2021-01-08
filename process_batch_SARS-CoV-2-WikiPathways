@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# see https://stackoverflow.com/a/246128/5354298
+get_script_dir() { echo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; }
+SCRIPT_DIR=$(get_script_dir)
+
+datenow="$(printf '%(%Y-%m-%d)T\n' -1)"
+target_dir="$SCRIPT_DIR"/public_"$datenow"
+if [ ! -d "$target_dir" ]; then
+  mkdir "$target_dir"
+fi
+
+batch_name="SARS-CoV-2-WikiPathways_$(printf '%(%Y-%m-%d)T\n' -1)";
+echo "Batch processing results to $SCRIPT_DIR/$batch_name"
+if [ ! -d "$batch_name" ]; then
+	wget -O "$batch_name.zip" https://github.com/wikipathways/SARS-CoV-2-WikiPathways/archive/master.zip
+	unzip -d "$batch_name" "$batch_name.zip";
+        mv "$batch_name"/SARS-CoV-2-WikiPathways-master/gpml/* "$batch_name"
+	rm -rf "$batch_name.zip"
+else
+	echo "Using previously downloaded $batch_name"
+fi
+
+# NOTE: may need to use '-k' if using GNU Parallel
+parallel -j 4 "$SCRIPT_DIR"/process_one_SARS-CoV-2-WikiPathways.sh "$batch_name" "$target_dir" -- "$batch_name"/*.gpml
+
+echo "check the files in $batch_name, run daily human approved, release as per README.md"

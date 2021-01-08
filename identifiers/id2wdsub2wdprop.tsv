@@ -1,0 +1,36 @@
+biogrid|Q4914619|
+biomodels.db|Q4914638|
+biosystems|Q2025895|
+chebi|Q902623|P683
+chemspider|Q2311683|P661
+dip|Q5227406|
+dbsnp|Q5243761|
+drugbank|Q1122544|P715
+ensembl|Q1344256|P594 P704 P705
+ensembl.plant|Q27927711|
+ncbigene|Q20641742|
+flybase|Q3074571|P3852
+genewiki|Q5531528|
+go|Q135085|P686
+hgnc|Q1646383|P353 P354
+hmdb|Q5937262|P2057
+homologene|Q468215|P593
+inchikey|Q21445422|P235
+interpro|Q3047275|
+knapsack|Q20900436|P2064
+lipidmaps|Q20968889|P2063
+matrixdb.association|Q6787838|
+ncbiprotein|Q24266708|
+omim|Q241953|P492
+pathwaycommons|Q7144881|
+pdb|Q766195|P638 P3636
+pfam|Q906796|
+reactome|Q2134522|P3937
+refseq|Q7307074|P637 P656
+rgd|Q7295410|P3853
+sgd|Q3460832|P3406
+swiss-model|Q7658835|
+wikipathways|Q7999828|P2410
+wikidata|Q2013|
+wikipedia.en|Q328|
+wormbase|Q3570042|P3860

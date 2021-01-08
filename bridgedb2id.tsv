@@ -1,0 +1,144 @@
+Affy|urn:miriam:affy.probeset
+Agilent|Ag
+AOP-Wiki KE|urn:miriam:aop.events
+AOP-Wiki AOP|urn:miriam:aop
+AOP-Wiki KER|urn:miriam:aop.relationships
+AOP-Wiki Stressor|urn:miriam:aop.stressor
+BIND|urn:miriam:bind
+BioCyc|urn:miriam:biocyc
+BioGrid|urn:miriam:biogrid
+BioModels Database|urn:miriam:biomodels.db
+BioSystems|urn:miriam:biosystems
+BRENDA|urn:miriam:brenda
+BRENDA Ligands|Brl
+CAS|urn:miriam:cas
+CCDS|urn:miriam:ccds
+ChEMBL compound|urn:miriam:chembl.compound
+ChEBI|urn:miriam:chebi
+Chemspider|urn:miriam:chemspider
+CodeLink|Ge
+Database of Interacting Proteins|urn:miriam:dip
+dbSNP|urn:miriam:dbsnp
+DrugBank|urn:miriam:drugbank
+EcoCyc|Eco
+EcoGene|urn:miriam:ecogene
+EMBL|urn:miriam:ena.embl
+Ensembl|urn:miriam:ensembl
+Ensembl B. subtilis|EnBs
+Ensembl C. elegans|EnCe
+Ensembl Chicken|EnGg
+Ensembl Chimp|EnPt
+Ensembl Cow|EnBt
+Ensembl Dog|EnCf
+Ensembl E. coli|EnEc
+Ensembl Fruitfly|EnDm
+Ensembl Horse|EnQc
+Ensembl Human|EnHs
+Ensembl M. tuberculosis|EnMx
+Ensembl Mosquito|EnAg
+Ensembl Mouse|EnMm
+Ensembl Pig|EnSs
+Ensembl Plants|urn:miriam:ensembl.plant
+Ensembl Rat|EnRn
+Ensembl Xenopus|EnXt
+Ensembl Yeast|EnSc
+Ensembl Zebrafish|EnDr
+Entrez Gene|urn:miriam:ncbigene
+Enzyme Nomenclature|urn:miriam:ec-code
+EPA CompTox|Ect
+FlyBase|urn:miriam:flybase
+GenBank|urn:miriam:insdc
+Gene Wiki|urn:miriam:genewiki
+GeneOntology|urn:miriam:go
+Gramene Arabidopsis|EnAt
+Gramene Genes DB|Gg
+Gramene Literature|Gl
+Gramene Maize|EnZm
+Gramene Pathway|Gp
+Gramene Rice|EnOj
+Guide to Pharmacology|
+HGNC|urn:miriam:hgnc.symbol
+HGNC Accession number|urn:miriam:hgnc
+HMDB|urn:miriam:hmdb
+HomoloGene|urn:miriam:homologene
+HPRD|urn:miriam:hprd
+Illumina|Il
+InChIKey|urn:miriam:inchikey
+IntAct|urn:miriam:intact
+InterPro|urn:miriam:interpro
+IPI|urn:miriam:ipi
+IRGSP Gene|Ir
+KEGG Compound|urn:miriam:kegg.compound
+KEGG Drug|urn:miriam:kegg.drug
+KEGG Genes|urn:miriam:kegg.genes
+KEGG Glycan|urn:miriam:kegg.glycan
+KEGG Pathway|urn:miriam:kegg.pathway
+KEGG Reaction|urn:miriam:kegg.reaction
+KNApSAcK|urn:miriam:knapsack
+LIPID MAPS|urn:miriam:lipidmaps
+LipidBank|urn:miriam:lipidbank
+MACiE|urn:miriam:macie
+MaizeGDB|Mg
+MatrixDB|urn:miriam:matrixdb.association
+MetaboLights Compounds|Ml
+MetaCyc|Mc
+MGI|urn:miriam:mgd
+MINT|urn:miriam:mint
+miRBase mature sequence|urn:miriam:mirbase.mature
+miRBase Sequence|urn:miriam:mirbase
+NASC Gene|N
+NCBI Protein|urn:miriam:ncbiprotein
+NCI Pathway Interaction Database|urn:miriam:pid.pathway
+OMIM|urn:miriam:omim
+Oryzabase|Ob
+Other|O
+Pathway Commons|urn:miriam:pathwaycommons
+PDB|urn:miriam:pdb
+Pfam|urn:miriam:pfam
+PharmGKB Drug|urn:miriam:pharmgkb.drug
+PharmGKB Gene|urn:miriam:pharmgkb.gene
+PharmGKB Pathways|urn:miriam:pharmgkb.pathways
+PhosphoSite Protein|urn:miriam:phosphosite.protein
+PINA|urn:miriam:pina
+PlantGDB|Pl
+PubChem-bioassay|urn:miriam:pubchem.bioassay
+PubChem-compound|urn:miriam:pubchem.compound
+PubChem-substance|urn:miriam:pubchem.substance
+Reactome|urn:miriam:reactome
+RefSeq|urn:miriam:refseq
+RESID|urn:miriam:resid
+Rfam|Rf
+RGD|urn:miriam:rgd
+Rhea|urn:miriam:rhea
+Rice Ensembl Gene|Os
+SGD|urn:miriam:sgd
+Small Molecule Pathway Database|urn:miriam:smpdb
+SMART|urn:miriam:smart
+SPIKE|urn:miriam:spike.map
+SPRINT|urn:miriam:sprint
+STRING|urn:miriam:string
+SubstrateDB|urn:miriam:pmap.substratedb
+SubtiWiki|urn:miriam:subtiwiki
+SUPFAM|urn:miriam:supfam
+SWISS-MODEL|urn:miriam:swiss-model
+SwissLipids|
+Systems Biology Ontology|urn:miriam:biomodels.sbo
+TAIR|urn:miriam:tair.locus
+TIGR|Ti
+TTD Drug|urn:miriam:ttd.drug
+TTD Target|urn:miriam:ttd.target
+TubercuList|urn:miriam:myco.tuber
+UCSC Genome Browser|Uc
+UniGene|U
+Unipathway|urn:miriam:unipathway
+Uniprot-TrEMBL|urn:miriam:uniprot
+VMH metabolite|
+Wheat gene names|Wn
+Wheat gene refs|Wr
+WikiGenes|urn:miriam:wikigenes
+WikiPathways|urn:miriam:wikipathways
+Wikidata|urn:miriam:wikidata
+Wikipedia|urn:miriam:wikipedia.en
+WormBase|urn:miriam:wormbase
+XMetDB|
+ZFIN|urn:miriam:zfin

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+kubectl logs -f $(kubectl get pods -o json | jq -r '.items[0].metadata.name')

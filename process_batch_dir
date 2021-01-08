@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# see https://stackoverflow.com/a/246128/5354298
+get_script_dir() { echo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; }
+SCRIPT_DIR=$(get_script_dir)
+
+batch_name="$1";
+
+if [ -z "$batch_name" ] || [ "$batch_name" == '-h' ] || [ "$batch_name" == '--help' ]; then
+  echo "Usage: $0 batch_name"
+  echo "Example: $0 unconverted"
+  exit 0
+fi
+
+echo "Batch processing results to $SCRIPT_DIR/$batch_name"
+
+PATH="$(pwd):/data/project/wikipathways2wiki/.npm-global/bin:$PATH"
+
+for gpmlfile in "$batch_name/"*.gpml; do
+  wpid=$(echo $gpmlfile | sed -E 's#.*(WP[0-9]+)(_([0-9]+))?.*#\1#');
+  version=$(echo $gpmlfile | sed -E 's#.*(WP[0-9]+)_([0-9]+).*#\2#');
+
+  if [ "$version" == "$gpmlfile" ]; then
+    if [ ! -f "$SCRIPT_DIR/public/$wpid.svg" ]; then
+      echo "Processing $wpid"
+      #~/GPMLConverter/bin/gpmlconverter --id $wpid "$gpmlfile" "$batch_name/$wpid.svg" >"$batch_name/$wpid.svg.log" 2>&1
+      ~/GPMLConverter/bin/gpmlconverter --id $wpid "$gpmlfile" "$SCRIPT_DIR/public/$wpid.svg" >"$SCRIPT_DIR/public/$wpid.svg.log" 2>&1
+      mv "$gpmlfile" "$SCRIPT_DIR/public/$wpid.gpml"
+    fi
+  else
+    echo "Processing $wpid version $version"
+    ~/GPMLConverter/bin/gpmlconverter --id $wpid --pathway-version $version "$gpmlfile" "$batch_name/$wpid_$version.svg" >"$batch_name/$wpid_$version.svg.log" 2>&1
+  fi
+done

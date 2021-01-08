@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# see https://stackoverflow.com/a/246128/5354298
+get_script_dir() { echo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; }
+SCRIPT_DIR=$(get_script_dir)
+
+datenow="$(printf '%(%Y-%m-%d)T\n' -1)"
+target_dir="$SCRIPT_DIR"/public_"$datenow"
+if [ ! -d "$target_dir" ]; then
+  mkdir "$target_dir"
+fi
+
+batch_name="daily_human_approved_gpml_$(printf '%(%Y-%m-%d)T\n' -1)";
+echo "Batch processing results to $SCRIPT_DIR/$batch_name"
+if [ ! -d "$batch_name" ]; then
+	wget -O "$batch_name.zip" \
+	  'https://www.wikipathways.org//wpi/batchDownload.php?species=Homo%20sapiens&fileType=gpml&tag=Curation:AnalysisCollection';
+	unzip -d "$batch_name" "$batch_name.zip";
+	rm -rf "$batch_name.zip"
+else
+	echo "Using previously downloaded $batch_name"
+fi
+
+# TODO: it appears gpmlconverter requires '-j 4' on this system, which has 8 cpus:
+#     grep -c ^processor /proc/cpuinfo
+# Anything above 4 results in errors. Why? What happens on another system with a
+# different number of cpus?
+
+# NOTE: may want to use '-k' if using GNU Parallel in order to output logs in correct order
+parallel -j 4 "$SCRIPT_DIR"/process_one_daily_human_approved.sh "$batch_name" "$target_dir" -- "$batch_name"/*.gpml
+
+echo "check the files in $batch_name, run conversion for watched repos, release as per README.md"

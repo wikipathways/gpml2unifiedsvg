@@ -1,0 +1,144 @@
+{
+  "identifiers.org": "biogrid",
+  "wd_subject": "Q4914619"
+}
+{
+  "identifiers.org": "biomodels.db",
+  "wd_subject": "Q4914638"
+}
+{
+  "identifiers.org": "biosystems",
+  "wd_subject": "Q2025895"
+}
+{
+  "identifiers.org": "chebi",
+  "wd_subject": "Q902623"
+}
+{
+  "identifiers.org": "chemspider",
+  "wd_subject": "Q2311683"
+}
+{
+  "identifiers.org": "dip",
+  "wd_subject": "Q5227406"
+}
+{
+  "identifiers.org": "dbsnp",
+  "wd_subject": "Q5243761"
+}
+{
+  "identifiers.org": "drugbank",
+  "wd_subject": "Q1122544"
+}
+{
+  "identifiers.org": "ensembl",
+  "wd_subject": "Q1344256"
+}
+{
+  "identifiers.org": "ensembl.plant",
+  "wd_subject": "Q27927711"
+}
+{
+  "identifiers.org": "ncbigene",
+  "wd_subject": "Q20641742"
+}
+{
+  "identifiers.org": "flybase",
+  "wd_subject": "Q3074571"
+}
+{
+  "identifiers.org": "genewiki",
+  "wd_subject": "Q5531528"
+}
+{
+  "identifiers.org": "go",
+  "wd_subject": "Q135085"
+}
+{
+  "identifiers.org": "hgnc",
+  "wd_subject": "Q1646383"
+}
+{
+  "identifiers.org": "hmdb",
+  "wd_subject": "Q5937262"
+}
+{
+  "identifiers.org": "homologene",
+  "wd_subject": "Q468215"
+}
+{
+  "identifiers.org": "inchikey",
+  "wd_subject": "Q21445422"
+}
+{
+  "identifiers.org": "interpro",
+  "wd_subject": "Q3047275"
+}
+{
+  "identifiers.org": "knapsack",
+  "wd_subject": "Q20900436"
+}
+{
+  "identifiers.org": "lipidmaps",
+  "wd_subject": "Q20968889"
+}
+{
+  "identifiers.org": "matrixdb.association",
+  "wd_subject": "Q6787838"
+}
+{
+  "identifiers.org": "ncbiprotein",
+  "wd_subject": "Q24266708"
+}
+{
+  "identifiers.org": "omim",
+  "wd_subject": "Q241953"
+}
+{
+  "identifiers.org": "pathwaycommons",
+  "wd_subject": "Q7144881"
+}
+{
+  "identifiers.org": "pdb",
+  "wd_subject": "Q766195"
+}
+{
+  "identifiers.org": "pfam",
+  "wd_subject": "Q906796"
+}
+{
+  "identifiers.org": "reactome",
+  "wd_subject": "Q2134522"
+}
+{
+  "identifiers.org": "refseq",
+  "wd_subject": "Q7307074"
+}
+{
+  "identifiers.org": "rgd",
+  "wd_subject": "Q7295410"
+}
+{
+  "identifiers.org": "sgd",
+  "wd_subject": "Q3460832"
+}
+{
+  "identifiers.org": "swiss-model",
+  "wd_subject": "Q7658835"
+}
+{
+  "identifiers.org": "wikipathways",
+  "wd_subject": "Q7999828"
+}
+{
+  "identifiers.org": "wikidata",
+  "wd_subject": "Q2013"
+}
+{
+  "identifiers.org": "wikipedia.en",
+  "wd_subject": "Q328"
+}
+{
+  "identifiers.org": "wormbase",
+  "wd_subject": "Q3570042"
+}

@@ -1,0 +1,3 @@
+SELECT ?compound WHERE {
+  ?compound wdt:P662 "65399" .
+}

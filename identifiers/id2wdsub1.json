@@ -1,0 +1,454 @@
+[
+  {
+    "identifiers.org": "affy.probeset",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "aop.events",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "aop",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "aop.relationships",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "aop.stressor",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "bind",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "biocyc",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "biogrid",
+    "wd_subject": [
+      "Q4914619"
+    ]
+  },
+  {
+    "identifiers.org": "biomodels.db",
+    "wd_subject": [
+      "Q4914638"
+    ]
+  },
+  {
+    "identifiers.org": "biosystems",
+    "wd_subject": [
+      "Q2025895"
+    ]
+  },
+  {
+    "identifiers.org": "brenda",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "cas",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ccds",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "chembl.compound",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "chebi",
+    "wd_subject": [
+      "Q902623"
+    ]
+  },
+  {
+    "identifiers.org": "chemspider",
+    "wd_subject": [
+      "Q2311683"
+    ]
+  },
+  {
+    "identifiers.org": "dip",
+    "wd_subject": [
+      "Q5227406"
+    ]
+  },
+  {
+    "identifiers.org": "dbsnp",
+    "wd_subject": [
+      "Q5243761"
+    ]
+  },
+  {
+    "identifiers.org": "drugbank",
+    "wd_subject": [
+      "Q1122544"
+    ]
+  },
+  {
+    "identifiers.org": "ecogene",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ena.embl",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ensembl",
+    "wd_subject": [
+      "Q1344256"
+    ]
+  },
+  {
+    "identifiers.org": "ensembl.plant",
+    "wd_subject": [
+      "Q27927711"
+    ]
+  },
+  {
+    "identifiers.org": "ncbigene",
+    "wd_subject": [
+      "Q20641742"
+    ]
+  },
+  {
+    "identifiers.org": "ec-code",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "flybase",
+    "wd_subject": [
+      "Q3074571"
+    ]
+  },
+  {
+    "identifiers.org": "insdc",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "genewiki",
+    "wd_subject": [
+      "Q5531528"
+    ]
+  },
+  {
+    "identifiers.org": "go",
+    "wd_subject": [
+      "Q135085"
+    ]
+  },
+  {
+    "identifiers.org": "hgnc.symbol",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "hgnc",
+    "wd_subject": [
+      "Q1646383"
+    ]
+  },
+  {
+    "identifiers.org": "hmdb",
+    "wd_subject": [
+      "Q5937262"
+    ]
+  },
+  {
+    "identifiers.org": "homologene",
+    "wd_subject": [
+      "Q468215"
+    ]
+  },
+  {
+    "identifiers.org": "hprd",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "inchikey",
+    "wd_subject": [
+      "Q21445422"
+    ]
+  },
+  {
+    "identifiers.org": "intact",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "interpro",
+    "wd_subject": [
+      "Q3047275"
+    ]
+  },
+  {
+    "identifiers.org": "ipi",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.compound",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.drug",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.genes",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.glycan",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.pathway",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "kegg.reaction",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "knapsack",
+    "wd_subject": [
+      "Q20900436"
+    ]
+  },
+  {
+    "identifiers.org": "lipidmaps",
+    "wd_subject": [
+      "Q20968889"
+    ]
+  },
+  {
+    "identifiers.org": "lipidbank",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "macie",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "matrixdb.association",
+    "wd_subject": [
+      "Q6787838"
+    ]
+  },
+  {
+    "identifiers.org": "mgd",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "mint",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "mirbase.mature",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "mirbase",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ncbiprotein",
+    "wd_subject": [
+      "Q24266708"
+    ]
+  },
+  {
+    "identifiers.org": "pid.pathway",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "omim",
+    "wd_subject": [
+      "Q241953"
+    ]
+  },
+  {
+    "identifiers.org": "pathwaycommons",
+    "wd_subject": [
+      "Q7144881"
+    ]
+  },
+  {
+    "identifiers.org": "pdb",
+    "wd_subject": [
+      "Q766195"
+    ]
+  },
+  {
+    "identifiers.org": "pfam",
+    "wd_subject": [
+      "Q906796"
+    ]
+  },
+  {
+    "identifiers.org": "pharmgkb.drug",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pharmgkb.gene",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pharmgkb.pathways",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "phosphosite.protein",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pina",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pubchem.bioassay",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pubchem.compound",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pubchem.substance",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "reactome",
+    "wd_subject": [
+      "Q2134522"
+    ]
+  },
+  {
+    "identifiers.org": "refseq",
+    "wd_subject": [
+      "Q7307074"
+    ]
+  },
+  {
+    "identifiers.org": "resid",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "rgd",
+    "wd_subject": [
+      "Q7295410"
+    ]
+  },
+  {
+    "identifiers.org": "rhea",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "sgd",
+    "wd_subject": [
+      "Q3460832"
+    ]
+  },
+  {
+    "identifiers.org": "smpdb",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "smart",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "spike.map",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "sprint",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "string",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "pmap.substratedb",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "subtiwiki",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "supfam",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "swiss-model",
+    "wd_subject": [
+      "Q7658835"
+    ]
+  },
+  {
+    "identifiers.org": "biomodels.sbo",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "tair.locus",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ttd.drug",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "ttd.target",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "myco.tuber",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "unipathway",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "uniprot",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "wikigenes",
+    "wd_subject": []
+  },
+  {
+    "identifiers.org": "wikipathways",
+    "wd_subject": [
+      "Q7999828"
+    ]
+  },
+  {
+    "identifiers.org": "wikidata",
+    "wd_subject": [
+      "Q2013"
+    ]
+  },
+  {
+    "identifiers.org": "wikipedia.en",
+    "wd_subject": [
+      "Q328"
+    ]
+  },
+  {
+    "identifiers.org": "wormbase",
+    "wd_subject": [
+      "Q3570042"
+    ]
+  },
+  {
+    "identifiers.org": "zfin",
+    "wd_subject": []
+  }
+]

@@ -1,0 +1,1 @@
+while IFS= read -r id; do echo "$id"; wikidata_property=$(wd query -p P1628 -o "http://identifiers.org/$id/"); echo "$id|$wikidata_property" >> identifiers2wikidata_property.tsv; done < identifiers.tsv
