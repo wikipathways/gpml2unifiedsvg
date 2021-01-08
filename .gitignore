@@ -1,0 +1,11 @@
+.npmrc
+public*
+old
+node_modules
+daily_human_approved_gpml_*
+SARS-CoV-2-WikiPathways_*
+data/*
+WP1541/
+WP4542/
+WP5027/
+WP554/
