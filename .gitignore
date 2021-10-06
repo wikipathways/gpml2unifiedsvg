@@ -2,6 +2,7 @@
 public*
 old
 node_modules
+daily_approved_gpml_*
 daily_human_approved_gpml_*
 SARS-CoV-2-WikiPathways_*
 data/*

@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+# see https://stackoverflow.com/a/246128/5354298
+get_script_dir() { echo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; }
+SCRIPT_DIR=$(get_script_dir)
+
+batch_name="$1";
+
+if [ "$batch_name" == '-h' ] || [ "$batch_name" == '--help' ]; then
+  echo "Usage: $0 batch_name"
+  echo ""
+  echo "Examples"
+  echo ""
+  echo "Run it fresh, downloading and processing approved pathways as of today:"
+  echo "  $0"
+  echo ""
+  echo "Retry if it didn't finish the previous time:"
+  echo "  $0 daily_approved_gpml_20211015"
+  echo ""
+  echo 'Run in the background:'
+  echo '  nohup ./process_batch_daily_approved >~/logs/daily_approved_gpml_"$(printf '\''%(%Y%m%d)T\n'\'' -1)".log 2>&1 &'
+  echo ""
+  echo 'Run as a retry in the background:'
+  echo '  nohup ./process_batch_daily_approved >>~/logs/daily_approved_gpml_"$(printf '\''%(%Y%m%d)T\n'\'' -1)".log 2>&1 &'
+  exit 0
+elif [ -z "$batch_name" ]; then
+  datenow="$(printf '%(%Y%m%d)T\n' -1)"
+  batch_name=daily_approved_gpml_"$datenow";
+  retrying=0
+else
+  echo "Retrying for $batch_name" >&1
+  retrying=1
+fi
+
+target_dir="$SCRIPT_DIR"/"$batch_name"
+
+echo "$(printf '%(%Y%m%d%H%M)T\n' -1):"" batch processing results to $target_dir" >&2
+
+if [ $retrying -eq 0 ]; then
+	while read -r organism; do
+		wget -O "$batch_name".zip \
+		  "https://www.wikipathways.org//wpi/batchDownload.php?species=$organism&fileType=gpml&tag=Curation:AnalysisCollection";
+		unzip -d "$batch_name" "$batch_name".zip;
+		rm -rf "$batch_name".zip
+	done < organisms.tsv
+else
+	if [ -d "$target_dir" ]; then
+		echo "Using previously downloaded content for $batch_name" >&2
+	else
+		echo "batch_name $batch_name specified for retry, but $target_dir does not exist" >&2
+		exit 1
+	fi
+fi
+
+# TODO: it appears gpmlconverter requires '-j 4' on this system, which has 8 cpus:
+#     grep -c ^processor /proc/cpuinfo
+# Anything above 4 results in errors. Why? What happens on another system with a
+# different number of cpus?
+
+# NOTE: if supported, may want to use '-k' if using GNU Parallel in order to output logs in correct order
+#       parallel on ToolForge doesn't appear to support -k.
+parallel -j 3 "$SCRIPT_DIR"/process_one_daily_approved.sh "$batch_name" "$target_dir" -- "$batch_name"/*.gpml
+
+echo "check the files in $target_dir, run conversion for watched repos, release as per README.md" >&2

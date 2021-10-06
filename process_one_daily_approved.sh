@@ -15,7 +15,7 @@ if [ -s "$target_dir/$wpid".svg ]; then
   echo "Skipping $gpmlfile -- $target_dir/$wpid.svg already exists"
 else
   echo "Processing $wpid"
-  PATH="/data/project/wikipathways2wiki/www/js:/data/project/wikipathways2wiki/GPMLConverter/bin:/data/project/wikipathways2wiki/.npm-global/bin:/data/project/wikipathways2wiki/.linuxbrew/bin:$PATH"; \
+  PATH="/data/project/wikipathways2wiki/www/js:/data/project/wikipathways2wiki/.npm-global/bin:/data/project/wikipathways2wiki/.linuxbrew/bin:$PATH"; \
   ~/GPMLConverter/bin/gpmlconverter --id $wpid "$gpmlfile" "$batch_name/$wpid.svg"
   if [ -s "$batch_name/$wpid".svg ]; then
     cp "$batch_name/$wpid".* "$target_dir"

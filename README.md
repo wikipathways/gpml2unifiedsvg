@@ -13,13 +13,13 @@ If that worked, convert them all:
 1. Convert from Egon's SARS-CoV-2-WikiPathways repo:
 
 ```
-nohup ./process_batch_SARS-CoV-2-WikiPathways > ~/logs/SARS-CoV-2-WikiPathways_gpml_"$(printf '%(%Y-%m-%d)T\n' -1)".log 2>&1 &
+nohup ./process_batch_SARS-CoV-2-WikiPathways >~/logs/SARS-CoV-2-WikiPathways_gpml_"$(printf '%(%Y%m%d)T\n' -1)".log 2>&1 &
 ```
 
-2. Convert all daily human approved:
+2. Convert all daily approved:
 
 ```
-nohup ./process_batch_daily_human_approved > ~/logs/daily_human_approved_gpml_"$(printf '%(%Y-%m-%d)T\n' -1)".log 2>&1 &
+nohup ./process_batch_daily_approved >~/logs/daily_approved_gpml_"$(printf '%(%Y%m%d)T\n' -1)".log 2>&1 &
 ```
 
 3. Release:
@@ -29,8 +29,8 @@ Check a sample pathway like WP554.
 Parse and check the logs:
 
 ```
-datenow="$(printf '%(%Y-%m-%d)T\n' -1)"
-target_dir=public_"$datenow"
+datenow="$(printf '%(%Y%m%d)T\n' -1)"
+target_dir=daily_approved_gpml_"$datenow"
 ISSUES_F="$target_dir/issues.log"
 echo $'"error"\t"wpid"\t"notes"' > "$ISSUES_F"
 
@@ -83,3 +83,6 @@ rm WP554/WP554.*{css,json,svg}; PATH="$(pwd):$PATH"; ~/GPMLConverter/bin/gpmlcon
 daily_human_approved_gpml_2020-12-14/Hs_Carnosine's_role_in_muscle_contraction_WP4486_103721.gpml
 
 less ~/logs/daily_human_approved_gpml_2020-12-16.log 
+
+ls -1 daily_approved_gpml_20211005/WP+([0-9])\.svg
+ls -1 daily_approved_gpml_20211005/*.gpml
